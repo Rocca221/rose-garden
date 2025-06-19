@@ -1,164 +1,488 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <h3>Cabañas SQL</h3>
-    
-    <strong>El Complejo</strong>
-    <strong>Ubicación</strong>
-    <strong>Consultos</strong>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santiago Rocca - Desarrollador, Artista & Comunicador</title>
+    <meta name="description" content="Portfolio de Santiago Rocca - Desarrollador Java, Python y HTML. Co-fundador de Márama Webs y Los Protectores de la Cabra Mística." />
+    <meta name="author" content="Santiago Rocca" />
+    <link rel="stylesheet" href="./styles/syles.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
 <body>
-    <h1>Cabañas SQL</h1>
-<H3>Descubrí el podee de las Relaciones</H3>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-brand">Santiago Rocca</div>
+                
+                <!-- Desktop Navigation -->
+                <div class="nav-desktop">
+                    <a href="#inicio" class="nav-link active" data-section="inicio">Inicio</a>
+                    <a href="#sobre-mi" class="nav-link" data-section="sobre-mi">Sobre mí</a>
+                    <a href="#proyectos" class="nav-link" data-section="proyectos">Proyectos</a>
+                    <a href="#marama" class="nav-link" data-section="marama">Márama</a>
+                    <a href="#musica" class="nav-link" data-section="musica">Música</a>
+                    <a href="#contacto" class="nav-link" data-section="contacto">Contacto</a>
+                </div>
 
-<a 
-  href="https://www.youtube.com/watch?v=4cxOKw9LuxM" 
-  target="_blank" 
-  rel="noopener noreferrer"
-><h3>conócenos</h3></a>
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
 
-<a 
-  href="https://www.youtube.com/watch?v=4cxOKw9LuxM" 
-  target="_blank" 
-  rel="noopener noreferrer"
-><h3>cabañas</h3></a>
+        <!-- Mobile Navigation -->
+        <div class="nav-mobile" id="mobile-nav">
+            <a href="#inicio" class="nav-link-mobile" data-section="inicio">Inicio</a>
+            <a href="#sobre-mi" class="nav-link-mobile" data-section="sobre-mi">Sobre mí</a>
+            <a href="#proyectos" class="nav-link-mobile" data-section="proyectos">Proyectos</a>
+            <a href="#marama" class="nav-link-mobile" data-section="marama">Márama</a>
+            <a href="#musica" class="nav-link-mobile" data-section="musica">Música</a>
+            <a href="#contacto" class="nav-link-mobile" data-section="contacto">Contacto</a>
+        </div>
+    </nav>
 
-<img 
-  src="https://media-cdn.tripadvisor.com/media/photo-s/0c/a9/b9/ab/mirador-arrayan-lago.jpg" 
-/>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg">
+            <div class="bg-dot bg-dot-1"></div>
+            <div class="bg-dot bg-dot-2"></div>
+            <div class="bg-dot bg-dot-3"></div>
+            <div class="bg-dot bg-dot-4"></div>
+        </div>
 
-<p></p>
-<h2>Conoce nuesro Complejo</h2>
-<strong>Ubicado en una calle cerrada contra la montaña, a una cuadra del lago Lacar y a cuatro del centro de la ciudad es el lugar ideal para descansar
-    estando cerca de todo.
-    además contamos con:
-</strong>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Santiago Rocca</h1>
+                <div class="hero-subtitle">
+                    <p>Desarrollador • Artista • Comunicador</p>
+                    <p class="hero-description">Creando tecnología con alma y música con código</p>
+                </div>
+                
+                <div class="hero-skills">
+                    <span class="skill-tag skill-java">Java</span>
+                    <span class="skill-tag skill-python">Python</span>
+                    <span class="skill-tag skill-html">HTML/CSS</span>
+                    <span class="skill-tag skill-teatro">Teatro</span>
+                    <span class="skill-tag skill-musica">Música</span>
+                </div>
 
-<strong>
-<ol>
-    <li>Piscina Climatizada</li>
-    <li>Quincho cerrado con Parrilla</li>
-    <li>Cocheras cubiertas</li>
-    <li>Juegos infantiles</li>
-    <li>Solarium</li>
-</ol>
+                <button class="hero-btn" onclick="scrollToSection('sobre-mi')">
+                    Conoce mi historia
+                    <i data-lucide="arrow-down"></i>
+                </button>
+            </div>
+        </div>
 
-<img 
-  src=
-/>
-<h2>Conoce nuestra excelente ubicación</h2>
-<ul>
-  <h3>Vas a estar cerca de todo:</h3>
-  <small>Distancia desde el complejo</small>
-  <p></p>
-  <li>5 minutos de la costanera del lago lacar</li>
-  <li>10 minutos del centro civico</li>
-  <li>30 minutos del cerro chapelco</li>
-  <li>5 minutos del inicio de la ruta 7 lagos</li>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
 
-</ul>
-<img 
-  src="./public/Captura de pantalla 2025-05-16 222032.png"
-  width="500" 
-  height=""
-/>
-<p>Coronel Diaz 1156
-  San Martín de los Andes<p>
-<h2><span style="color: red;">Descubrí el placer de descansar como si estuvieras en casa</span><h2>
+    <!-- About Section -->
+    <section id="sobre-mi" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre mí</h2>
+                <div class="section-divider"></div>
+            </div>
 
-<!-- aca hay informacion especifica -->
-<section id="Cabañas" class="Cabañas">
-  <article id="cabana-1" class="cardCabañas">
-    <div  class="cardHeader">
-      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhIVFhUXFxcXFxUVFxcYGBUXGhUXGhUYFxcYHSggGBslGxcXITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi8fHx8tKy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSstLS0tK//AABEIALcBEwMBIgACEQEDEQH/xAAcAAAABwEBAAAAAAAAAAAAAAAAAQIDBAUGBwj/xABMEAABAwIDBAcFAwgHBQkAAAABAAIDBBESITEFBkFREyJhcYGRoQcyscHRQmLhFCNScoKSovAVM0NTVLLCF5PS4vEWNERjZHODo7P/xAAZAQADAQEBAAAAAAAAAAAAAAAAAQIDBAX/xAAoEQACAgEDAwMEAwAAAAAAAAAAAQIRAxIhMRNBUSIygQQUQmEjYnH/2gAMAwEAAhEDEQA/AM7TbbfEIw8G+QJJ8iVoKTbLJsWY6uZPDv7slU11TGYJI3xvMo9xrWkua5txcuAyaPkqrYUtJYOmkeAdWNYc8+L+I8FzPGjoUmdPoziYxx+00HzF1JDFSQ720VgOkIGgux4+SlR7z0Z/t2+IcPiFtaMnF+CzDEoMUOPb1If/ABEXi8D4qRHtWnOk8X77fqi0KmPtjThYhFOx3uvae5wPwUgtTERujRdGpOBDAmBAkoo3e8xp72gqKd36UnF0Ed9bhoHmBr4q5wI8CKHZDEIGQFhyRYFLwJBYmIj4EZZkU9gRluRSA517R2X/ACf9aT4MWa2BW/k8wl4tDrXBIzFjp2LQ+0OrDpoohqwFzu99rDyF/FZLAXWa0Xc4hoHEkmwAWcvcdOP2Mttr17aqZsshuG2AYPdsDcjx4/gr5m+sjRYMjsOFnfVXmwdy6aOJoljD5LXc67hmdQLHQKxO6NGf7H+J/wBVqkYNoyg39m/u4/J31SXe0eRusUf8a13/AGKoj/Znwe76rK+0Dd6hpIMTWO6Z5tGMZt95xHEAepCBbFLvHvpLVxdDdsTD74Ziu8cASdB2cVlRSs4SeiZ6Na7cvceWtcHuuyEHNx49jRxPw9EiuBvcON0FZHKQTGbxvfbJuNpwXPDrAeZXb6QgFQqndmA0hpI2hjLCxGZxjMOJ4m6qN3vyuAuiqy0MYOq92rtfdfo4C2hzGS582O9y4SOgQziyYq5bqCKxrLBzgC42YCbFx5NHEqPWSvcXRwub0oF7OF7XORIBBWHSk0k3sNaU7DxASMbq5x07G5uJ7PqFlDRMl2jVufG14YGAYmg2OEaX00Ws2Fsd0OKSZ/STv953Bo4MYOA+Kz+zm3qq533wPIvC6NGlUGq7Dg2g3RjLAX0GQ+FlKZUEtxHIHTtHko8zGxxAWJDyWktzsLXdlzt8VaCnYY8Rzb97VVsZOyhppppQTiAAJHPQ24qPtKhmwklxAAJ6pOeWQPipIrWxzOawWY4AdmMXv3XFvJOVk5ka0aEuadcrMIcT6DzTopJlWN3nnMg+iCuJdrhpsSbjsRJUx2zM7K2UyaIscXXw2Ja5zA/Gxrm4g02Nr2z5Lm5jwgtORHVLeIIOll2LYLetprFCf/rI/wBKsajZUEhxPhjcTxcxpJ8SE3CxxyaGzhpz7rp2M2OXED4ldmO7dGdaaH9xqT/2Vov8NH5W+Cnpmn3COOsuGm45+f8A1RuB6ptlw5aLr53Qof8ADt8C4fNJO5dD/cfxv/4kukx/cROU05sC4ZOb1gRqDbgu5RG7WnmAfMKkj3LomkEQ6cC95B7xfMLRYVpCLRjlyKdUIshZLshZaGQ3hQsnLIigQ0WpJCcRFADdkzW1DYo3yO91jS49wF1IWL9pO0sMTadpzkOJ36rTkPE/5UAc5rKx0srpHaucXHs5Dw08FL2LtDoJmyiNshbezXGwB535/VVsULnyNjYLucQAO/RdK3X3LbFd04DnHLCMwO26irZupVGiPD7QJONH+7J9WqZF7RGfapZv2S0/RaJu71L/AHDPI/VPN3epf7hnktNzHYoYfaRR/bjnZ3sb8nLnO9u2nVlQ6XPB7sbf0WDTxJuT39i0/tMFJFgp4YYxJk97wM2t+y0dp1PYBzWIoKR0kjWRglziAANSTokxqi+3B3aNXUDGD0TOtIezg0dpOXdc8F3WmgaxoYxoa1osABYAdiqt19iNo4GxNsXavd+k7ie7gO5XbWoQm7AAqzbm70dXhEj3gNv1WnIkjIkHiOfgrYJwJiToyMG4UIYWvlke7LA/TowOTb2N1ZbK3RpoHNkaHOe37TnXueZAyur4BGFNIephgLD7ONhWSc5HHyB+q3TViKWO1NMeLnPPoLKZcouPtZQQ7Qw9a5sBxP2uJHLLLzVt/Td2a3NtPD1UGHZzXuFomlvIa95Oisv6Mw2wx2PHIFW4ojUZ+oqC4CQg+9fLhY/RWFPKS+5BAF2gcySPx8lOkpySMQFuGmXO1wnqeAMyaDb1Q0inIhvjAPuDyKCscY7fJBFkUyu2Mes3L+xi9HytV5ZZvYEUjXnGLDDZt7g2EhOd/wBZaYqI8FS5CASwEQSgmSGEdkEEwAl8EmyXdMAkVkaBQASJGUSAEFEUZSboAS5ca3m2l088kt+rchv6jcm/XxK6RvptHoaZwB60nUHcfePl8VyKpBcWxt1cQPXL1QNE3ddlQyT8ohhDzmAXNcQO0YeNlsY9vbU4UrD/APHKtJu9QCngjiBHVbmebvtHzVswjmEIbaMhHt3av+CYfCQfEpFfvbtGnZ0ktCxrBYYsRGZ04rcBcm9oW8HTzdCw/m4iR2Of9o+Gg7imIy1dWPmkdLIbue4uJPM/LguneyvdzA38rlb1nAiIHgNHP8dB2X5rF7mbANZUBpv0betI77vADtOnmeC7rBGGgNaAAAAANAALAJAPNCdaEloSwmINqcCQEsIAUlJISggBMhs0nkD8FnIabFDhBtcuzGvvEfJaOWPE0t0uCL8riyxVR7NIXuLnVU5cTcnq5nwCl2UqrctqfZpaLA/z5J78hPM/z4LOn2Ww/wCKn/hST7LI/wDFzeQ+qLkLRHyaI7OJ+0R3W+iS7Zd/tu9Pos9/stbwrZP3P+dI/wBlv/rX/wC7/wCdK5DqPk0X9EN5n+fBBZz/AGXH/GO/3Z/40aLkOo+Swm98HsI+B+SnlQKr3m/rH1a5TGnIdwQQLCUE3dKBTAcBQSQUYKAFIwmHVLQ4M4lPJgKREoIFACSUklInmawFznBoGpJsB4lZqp3ta9xjo4nVD+bco297z/PagaVmlc5Z6v3ria7o4Q6eT9CLMeLtFXUmyqmrc810j2MY6wiZ1WOHE34j+bqbFtahgjlbTujxRi5a3Ik6DM+/nYXzSHSXJjN5NqTTSWmAaWXAY3MNva9zxOWfcmt1N2DW9LK52FjbNabXuePFVVfM5xsM3vPiSTmtXsLbVVTQNhZRXA+1iN3E6k2BQBMi9n0PGR3gCP8AUpMfs+p+L5fA2TMe8G0D7tD5ud9E6dubTY0vdRxNa0Fzi6SwAAuSbnknsG5Tb5bDpaKEYXymV5swGTQD3nEAaC4HeQsPTwue9rGguc4gAcSScgpe8W25KyYyyC2QAaD1WgcBftufFbv2V7u2H5ZKOYiB8Q5/yHj2IA2e6Wwm0dO2MWxmzpHDi63DsGgV6xNhOtTJHWlOBNtTgQAoJbSkBKagBd0oJASroAUCjSQUaQCkESNAAQQuiQAaCCCAMXXc/vN/zBSIz1Qo1a67X6XF9OzMelvNPQnqjx+KkB0JQTYKVdAC0aSCgCmA26laXh594aHJSb5JF0mcOLCGHC6xsbXsbZG3FMBNXWRxNL5HtY0facQB6rLyb3vqHGPZ8BlIyMr+rG34X9Eql3Na9wlrpXVMnI3EbewN4jvy7FoqOgiixdGwMDjchosL9yW5XpX7M7Buo+Yh9fO6Y6iJpwxN7MrX9FpKalZG0NjY1rRoGgAeifRFFCbbIu0I8UUg5scPNpXB5XG47brvk4u0jsPwXnqqls7zQxx7l5urWwR1QlqHHDHctAF7v4eWvkugv9oFFb3nn9n8VT7Dg2ZBTxtnfE+W2J9rvIccyOrfTTwTs239msBwU7XHgcEYH8Rv6IBkg7/0w4SfulZ/fXfRlRAIILtu785cEEgaDz17k3t7fGQstTiOPgbAF4HYdFiYI3yPDWguc45AZkkphRf7n7CdW1AYf6tvWkdyby7zp/0Xd6eNrQGtFmtAAA0AGQAVBujsEUcDY8i89aR3N3LuGg/FaBqBMkNTjUy0p1hTEPNTgTTSlgoAdCUE21KugBaUEkFKCQBhKCSjQAaNFdFdACkSCCADQSUEAYyraBjNrX1/cASdmzh8Yc03Bz9AoO9FXgp3HQuyHj+HwWNp973QwgRMaRricb2sbWDQR3+Ki6KUWzpQKMFZzdveITxs6UhspJGGxAOfVI7wtACmJqh0FGCmwUoFMQ4ClA5Jq6W1MA7oXSLo0AKJQukKp3k2/FRx435uPuMGrj8hzKALOaQAEkgAak6Lz68sEl3NxAHS+G/iNFJ29vDU1TiZXuw3yYMmD9nj3nNV8pNyePDyUtmsY0LqKdxNw0AcAL5DxJPqoj2G9gM+Q1XQ9i+z2aQB1XKWNytGw3cR2n3R6rdbP2DTUzLQwtbl71rvPe85nzTIbON0G6dZN7sLmg/aecA/izXYI6GnaOrha4C1xxsLcu08lJaM0uZmMWLR46+BCZI/HFKM2vDh2/j9U5PVvjidI5l8LXOIBF7NBJ17uaYZQWzjeW9hzCdraaSSF8V2gvY5l8z7zSL6DmkCKSg9oNI+wkxxH7wuPNv0WnoNpwzC8UrHj7rgfRcf2zuTWwgu6PpGj7URxebfe9FmI5HMN7lpGmoI+iWo26afB6UY9OtK4Ps3fGsi92ZzgOD+uP4sx5rU7M9qJ0nhB7Yzb+F1/impIl45I6o0pYWV2dv1QyZdLgPKQFv8Xu+q0lPUNeMTHNcObSCPMKiKofCUEkFKQIUjukLPba3n6F7o2R43NA1dbUXGVrkZ/FJgaW6JYjZ2/Dxf8piDW8473He0k38FoNh7xwVZcIi7E0Bxa9pacJJAcL6jJA6Le6F0EECBdEgggDiXtH2phjawHMMH7zhb4X81z+nu5rGfpOF1ofaBTOdO1oyLg3XIZYlXUtE2NzXYiS3MC2WnNYQmnFNnVLE7dGjYC3CRkQbjw0XSaSYPY14+00HzCwUtMejD7ZWBv2HRandWoxQAcWEt8NR8fRXExmi7CUEjEoVRtqnjydMy/IOBPk25WhmWKW1Zip30pm+7jf3Nt/msmNnb6dLOyIQ2DzYnFctyNjYDS6WpFaJeDWI0QVFvXvPFRszIMhHVZ/qPYmSL3p3jjoo8Tus8+4zmeZ5BcU2xtiSokdLK67j5AcABwCPa21ZKiQyyOuT5DsA5Jp9MSwSYCGm4BINiRrY6Gyk0Soud2N3J6xrnMsGNuMT7gF36LT8ToFF2LEPy2Fjx/bMa4ftgEeaZ3e3jnoZMUZuwnrxO913b913aPVObLqg+uikAsHVLHAHUB04Nj5pMqO7Z3sIpB1SjTNfUBkT3WvZpNtL2VXRit+Cm27XuhaHNAuXW617DInQWvpzVls+fHGx5sC5oJtpcjP1XPdu1Ms0mJ5Fg0hrW3sM8znx7exbbdaTFTR31GIeTiPgojO2bTxuMd+S7YU6Wk3ztytqPNNNTwK0MSFvUL0dR/wC0/wCC5PRNmkY+NkQka51z+aDy02tk6xLcuS69tpmKmmHOKT/IVk/ZO67agfeZ8HfRZyVyRvidRbMjszYU87S6GMua3IkFoANr8SOCYk2LMYDUtixxNuHOBF22AJuNbWI81vvZf/3adnJ/+gD5KHsPrbHrR2Tf/i36KFE2eR7/AAcvqHG6l0G05YnAxyPafuuIv5Lonsx2bBUU8zZomSDpGkY2gkXZwOo04JzercKmgidUwF7MFnGMnG0jEL2J6w8yrp1aJjKLnpkPbn7yVTniKpmBDgbEhocHAXHW46FW59odKyZ0UmINFgHhpI7b8T3geaw9BsOepcwxseGEE9I5wwOIGdr/AM66pGz445nvaY3uDDhPVvnrfCMwORXNpmsmtt8cdi/qeksjhjWyOu7N27TT/wBVMx3Zezv3TmuUe0mrvWS4HlpbhaTe2eEXGSqtvR08QIaHsfe7GgG3C98RyGuiqgSSC7rHUk5581u8lozjh3LITzGMOa9wPaTy1B/BbX2V07m1MpdqKePjf33Ym+gCyVXL1BpYNGi03sz29AySpdPKyNz+iazFkCyNpaM9Bw1KMc7e48+KorSdVQCahma8YmODhzaQR5hOLY5A0SCCAOMbxbvSVMsbmWDWg43XAItm3Ljc5eaybm2NuIyPeNV1Wi0cO75rne8tP0VS8fZf1x46+oPmuGC/iUj0YT/kcWaHYj+lpMPFt2eXu+hCqoXVOLoqd5a5xzAIbewPE6cUe5NXaR0R+0Ljvb+BPknq5zoZsY1BxBbQdoxyx0yJLN06uX+unaO9z5D62HqrCm3HiHvyyO7G2YPmfVV8u9k590Mb4E/EqDLtqpfrK79mzf8AKAtNjH1FvvRsKnhpXuijs8FlnXc52bgDqeRUL2dyYZpg7K7GnPLRx596qy8uN3EnvJPxQkBAu0C/apfNlp+lxZ01+04W6ysB/WC5b7S5o5aprmuuOiDb9oc76hR3SyE3xegUDaDC62I371Wtk6EjPzUxC2tHvhHNSfklRAzE1tmuacA6o6rmgDqu+OfNZiVxGWXjqoj4hf8AkI1BosVhFkKaYtkY4ZFr2kdhBBHqETr6JtnvDvHyUo0mb5+8E7xm95/aI+CrpauTrG58SU1GRZOllwlQk6LKqfcMdzy8xb5rVbl1F4XN5PPqAfqsV035oX+y4eWaOm2o+Ah7H4cyCDm11jlccVjidM688bg/hnXInKS1YKj9oFPhvIHB44NGIHuPDxRu9pEf9nA8/ruDfQXXZqR52iXg3da28Ug5scP4SuW7hbxx0XSmRr3B4jtgw/ZxXvcjmFqN2t56itldC1sMf5txBdd1jcWvc5jM6Diuh7P2axkTWBseENAA6NoGnIWB8lLVu0VGWlNNcnFt2t7vyMTBsOPpH4h18OEZ5HI31USg3hmippqdkbS2XFiLgbjEwNNswNFbb60DY6qUxtYGBzQQwABji0GxaPdvqs+Qo0vybKUXvRo/Z7t2OijmEwfdzmFoYAb2BB1IA1Cuto+0RpaWtpcQIIPSPABByIIAN/NZDZuzpJnBkbS4nloO88B3rSQ+z+pd7xjb3uuT5ArRcGUqu2S91d4pZmTgxxxxU1O50bWB1wbGwLnE3FgVktn7wTzPD5pzjtZ1rNJaHEhvVAFs1v8Ad/dmSCnq4nYTJIzAMJuLFp4m1syuY7Y3ZrIC4uppS0N95rcTRfjduX0RJWEJRTsrt468PkFs7Cwsb2vnYniblKopRjDXkDkToVXGGwDu49mqvNkxNc64F2nnnY8j2rnklFUdkJucrE7XkALrHgOPZ+KpWv5Ky29G1pc4NF78vkqhtS06i3aMx5a+pUJXwatpOmWuz9rzQnFHI5h+6SPOy1uy/aZVx2EmGUffFj+82ywbG391wPcc/LX0RgoUpRB44T/Z16P2qR2GKndfjZ4t6tQXI8aCfWkR9pDwdiondYjsKy+/dNdjZOLTbwP4geav6CcFzXNIIPEZg3UDfCO8EnZn5EH5FL6f1Ymmc2V6cqkYSiquhlZJ+i4E93H0JWv3mhuA8afVYlox5AEq3l2hUvjEOJoa0WybieQNL6+iISrZnRnhq3QoNSXSNGrh5qHHSvdrjd35DyyUyHZx+63wufktbOfQlyxP5UOAcfCw8ykvrzya3vN1YR7Jxa4nenwzU+HYGRswDI6jPTtRuHpRlHzdvlkgynLgciBla6iWNrLQU4xMHcPgojJs0yxUUqM/UUJJyysmjs22v0WidTpDoBw0V2ZIpWUTbaEpIomX90XVx0Q05pEcIuix0Ijj8E6GdqdA8EosRYqIUo/NvHEZ+Ruq3aEZDIznYgnxKu447l4ys5p+FlCrp29EG2zyN/P5FYJ1L5O57w+CkYFKiyQEYAJw3uOGoN8jbjy8U0HeI9VtZikmt+Swie9pDo3ua4ZhzSQR3EaLYUO+21GR2xteBlic0E+JFrrGU4PNXcFT1MPqqUiJQ/Qmo2zVVDiaiTFncAAAA9gaAElqawi+idhIuLmwuLkcBfMpppkuDR0L2XSv/Oxhji27SXBzQG6jNpIuTbUcl0HoCFVbqbLpoowac4g8Al+K+LLIgjTwVntWnLonta4glpAzsASLA3Ga2Rxy3YxLSOu4iQi5BOQNgBoOWidIXKts11ZTuMLqh/VtYte4i3DO91Xz721rmYDUPtlmA0HI3HWAv6qXJI0WJvg2W/O7FJJDJKejhmwuLHlwYHuAv1h9rvtdcUprh1xcd1x8Ff7Z2rNMB00rn20xG9u4KlDlnKVnRjx0uREskj+q55I5Ek8bpl1KE6yVoOefclS1V8ms88/goSNGyDJFZWWy4pX3PVc0ZHHcnwLet6qz2TuPX1WbYixp+3L1G+A1PgEKaPoWFgcHAF13DQ56jsKmdxRWNqb2LOl2VsxzAZamoiefeja0PDT2Ow5jj4oLNybQzOiCz+B3/Zlr7O68hzonE2FiByzW03rcBDL+qfXL5rmG6cxbUtPMW/nyXR98X3pXHmGermrfHs5I5Mu8Ys5u+SxNlf7k1Ti58IcBiF9OWtu2x9FnJ9O5P7Dq+inZJnkcwOIII+aiqZ0p6oUdGGymjIkqfBRMH2R4rNSbzSO92Jo/Xd8mj5qPLtyoOsjW/qMz83E/BDyIzWCb7G3OEZZJD52jVwHaTZYN9U9w60sjuzFh9GWUdz4xmQL8zmfMqesuyNF9K+7K95Ac62mIj1VvQnqNPYFQyEXNjlc2Wg2aPzbT2fMohyPMvSiSIkfQhOQNJy5fBPGMHLXsVnMQXRjmmzFnYfirFsVsjqklrRrr3oGiAYzqjIJy/kqcZRpcfIpmR9zp4pWMhujwkdvyP4rOTe8QeBI8jb5LT1I7PFZ3aDRjdr7x4dqz/JnXFXiQqLRR5YutduRS2SNta/mEA651CtMzcGxMc2dnZFTGVdjY681HdFiHP4qLhcw/pDkdR3c0tuxpHXW6LpshPYlPZcaqDSOxDqG44dispqN7Re4I53t8bJ60g0N78j+w56ymN6aV7b54WnI97TkVaV+/G0yMLpS3nZjAfOyoItsyRG7MII0JzVVX7XLyTJJcn+dAr1+CHj7ypFxLtIu60r7uOpJuSocu0BwB8cgq2l6SUOMUTnBoJcQDZoAuSSNBbmorsR1dbsH1Q77krS+NyfUVV9SAntk7LmqpBFBG57iL2Nmiw1JLiLDTzUClY0HTxOq6b7IWt6SpmcQMDWMuSAAHFxOZ/UCUHcqDKnGFoVsX2Uk2dVTBv3Isz4vI+AW/2NuxR0oHQwtDv03dZ/7xzHgoVdvnRRZGYPPKPr+oy9VO2RtyCpF4n5jVpycO23zC6VRwS1vdiN8do9BSSOBs5wwN/Wfl6C58FxboDNLHTs1e5rO6+p8Mz4Lbe1favXipwfdBkdbmcm+gPmshulXCGZ1S5uJ2F7I/uvcLYzzsCRbtWGWnJJ9jrwJrG65YxvDVU8dTJHDTxFjHYASxriS0AOJJzN3AlEqet2eC9xMhJvxH4oI6iH0/0RtlPwzxu5uP+Yrou9El6Icb4R/GPosJtWBscsQYLAWA81rdtS4qRjf/ADG/BxURlbvyROFRrwzH1DDhN1EjfbwVnV2DfRU4VNWPG6Rcsq3nRoHefojxPdq8DuH1SabNoyGYHwSwbZfJTpS7DeWb7jjKcEZvcf2iL+Asn2UrB9kX58fMptptbinxfgExFTObPd3laHZJBib2E/5iqiXZkjnlwtY249gCvNl02BgY4555jtU0U5WqJ7DobX5fyUtshtewF0dNcciEC63DXMZ+aozoJ5BGRsU3I241ueKdB7CgH55Cw43UjGY2G3AINbn28QnQCDYHxCEjDe59Tr9EDINd7o01VE2i6SQjERcu45cVd7XeMALefyVfsiI9PidYN62ZI7bLL8jqi6xAO7bzo/zt/wAKZdsCUaOF+4fULWMcNL/zzSJnDi4d3FaUYdWRknbKnZ1iAQNcwLDuuVAlPWPeVqtqz4YnZHkO++SyLTdZzW514JtrcVgzxNOE8xx7xxR1W06t1mABw5tYfXOyKPPRWEe0Y42Bti52dwBbO/NPG999wz2o3HayoZsaeTOR2Edp+QUqp2RDFEDmX3AudO3JIqNsPOTbNHZmfMque8uN3EnvW9nHGDu3ubbYG2h+RtpGjquc/pcsnYiMI8kNqbuNMTi1oa4C4tbO3C3FU+w48LWu/a+YVrDXuJ6x8+z8VhKTvY6YY0kUcOy5P0D3nJWdNsWwu99uNhkOzXVSZK4/pADssFBq6hrRicTb9I3U6mynFVuWTIqdosW3Pr6pDa0RuD4nOYQeqQcx3LPv2mwmzTcnRSHTFjS51she181XqRHoaLDa1b+UyOkleS91rkC2gAFhbLIIQQtEbcGgNs+N+KoqfaRkdYMtkTcqyZXdS2ljfvNkT1dwg12K6trTjd3oKoqZSXE9qC10GPUNFS7PlkeJJnDLMNCuNsy2gb2yZeDXX+SCCxg7l/g8qqJRgl5se9Q2UbyTbnzQQXQc6LOCnc1oBOg4JbbEjnyQQU2WSw3uB809ELA3zsjQSGOwuvoFKa4EgeCNBIGTYQL4fKycfCLHj38LIkEye4mBgcMr93JLjjw3FkSCAGLgZWzzsU2JATYknv4oIJFIgba/qrj9IXA7ihQ0b3xtILc+BJFrG2tiggpcU3uaPJKEFXkX/RTxnhFzyI+dk0+kkF+ofNvycggjQgWaT5Kza8zujAJPvDIknnzJVTSROc6wCCCKN4SDg94ePwUerHXKCCmPJrk9pHAubDUpNRG9psRY99/giQXQkcEpO6NLC/CAOQA8AqjblQ5xAbcW1sbIILCHus6Z7xojbIaekxOzwtJF889B8VMr7yAAnje3mggnNvVYscVooYoYGh4IGnb4KdWOsLeJQQRJ2wgqWxEpXe8eeXgE5Uvs1BBH5DfsKQvRoILpOCz/2Q==" alt=""
-      width="500" 
-      height=""/>
-      <p></p>
-      <h3>Cabaña para 2 y 3 personas</h3>
-      <p>Un refugio ideal para parejas o pequeñas familias que buscan tranquilidad y confort</p>
-      <ul>
-        <li>20 m2</li>
-        <li>Ambiente Climatizado</li>
-        <li>Caja de Seguridad</li>
-        <li>Wifi de Alta velocidad</li>
-        <li>Cocina Completa</li>
-        <li>Caja de Seguridad</li>
-      </ul>
+            <div class="about-grid">
+                <div class="about-column">
+                    <div class="about-card">
+                        <h3 class="card-title card-title-purple">El desarrollador</h3>
+                        <p class="card-text">
+                            Con <span class="highlight highlight-blue">17 años</span> y <span class="highlight highlight-green">2 años de experiencia</span> en programación, me especializo en <strong>Java</strong>, <strong>Python</strong> y <strong>desarrollo web</strong>. Creo en la tecnología que no solo funciona, sino que conecta y emociona.
+                        </p>
+                    </div>
 
-    <div class="cardFooter"></div>
-</section>
-<section id="Cabañas" class="Cabañas">
-  <article id="cabana-2" class="cardCabañas">
-    <div  class="cardHeader">
-      <img src="data:image/jpeg;base64,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" alt=""
-      width="500" 
-      height=""/>
-      <p></p>
-      <h3>Cabaña para 2 y 3 personas</h3>
-      <p>Un refugio ideal para parejas o pequeñas familias que buscan tranquilidad y confort</p>
-      <ul>
-        <li>20 m2</li>
-        <li>Ambiente Climatizado</li>
-        <li>Caja de Seguridad</li>
-        <li>Wifi de Alta velocidad</li>
-        <li>Cocina Completa</li>
-        <li>Caja de Seguridad</li>
-      </ul>
+                    <div class="about-card">
+                        <h3 class="card-title card-title-pink">El artista</h3>
+                        <p class="card-text">
+                            Estudio <span class="highlight highlight-pink">teatro</span> como herramienta para potenciar mi expresión y empatía. Fundé <span class="highlight highlight-yellow">Los Protectores de la Cabra Mística</span>, donde fusiono música, narrativa y puesta en escena.
+                        </p>
+                    </div>
+                </div>
 
-    <div class="cardFooter"></div>
-</section>
-<section id="Cabañas" class="Cabañas">
-  <article id="cabana-3" class="cardCabañas">
-    <div  class="cardHeader">
-      <img src="data:image/jpeg;base64,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" alt=""
-      width="500" 
-      height=""/>
-      <p></p>
-      <h3>Cabaña para 2 y 3 personas</h3>
-      <p>Un refugio ideal para parejas o pequeñas familias que buscan tranquilidad y confort</p>
-      <ul>
-        <li>20 m2</li>
-        <li>Ambiente Climatizado</li>
-        <li>Caja de Seguridad</li>
-        <li>Wifi de Alta velocidad</li>
-        <li>Cocina Completa</li>
-        <li>Caja de Seguridad</li>
-      </ul>
+                <div class="about-column">
+                    <div class="about-card">
+                        <h3 class="card-title card-title-green">El comunicador</h3>
+                        <p class="card-text">
+                            Mi <span class="highlight highlight-green">gran capacidad de comunicación</span> me permite conectar con las personas de manera auténtica. Esta habilidad es clave en mi rol como community manager y en mis colaboraciones técnicas.
+                        </p>
+                    </div>
 
-    <div class="cardFooter"></div>
-</section>
-<section>
-  <h2><span style="color: red;">Consulta sobre Disponibilidad</span><h2></h2>
-  <p>fecha de ingreso</p>
-  <input type="datetime">
-  <p>fecha de ingreso</p>
-  <input type="datetime">
-  <p>adultos</p>
-  <input type="number">
-  <p>menores</p>
-  <input type="number">
-  <p>nombre completo</p>
-  <input type="text"  id="" name="">
-  <p>telefono</p>
-  <input type="tel">
-  <p>email</p>
-  <input type="email">
-  <p>mensaje</p>
-  <input type="text">
-  <button>Consultar</button>
-</section>
+                    <div class="about-card">
+                        <h3 class="card-title card-title-blue">La visión</h3>
+                        <p class="card-text">
+                            Creo en crear <span class="highlight highlight-blue">tecnología con alma</span>: útil, estética y humana. Cada proyecto es una oportunidad de combinar lógica con creatividad, código con arte.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-quote">
+                <p class="quote-text">
+                    "La intersección entre <span class="highlight highlight-blue">tecnología</span> y <span class="highlight highlight-purple">arte</span> es donde nacen las ideas más innovadoras"
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="proyectos" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Proyectos de Desarrollo</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">Cada línea de código cuenta una historia de aprendizaje y creatividad</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Sistema de Gestión Escolar</h3>
+                        <span class="project-language project-java">Java</span>
+                    </div>
+                    <p class="project-description">
+                        Aplicación completa para administrar estudiantes, notas y horarios con interfaz intuitiva y base de datos integrada.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Swing</span>
+                    </div>
+                    <div class="project-buttons">
+                        <button class="btn-primary">Ver Demo</button>
+                        <button class="btn-secondary">Código</button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Analizador de Datos Musicales</h3>
+                        <span class="project-language project-python">Python</span>
+                    </div>
+                    <p class="project-description">
+                        Script que analiza patrones en canciones y genera recomendaciones personalizadas usando machine learning.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                    </div>
+                    <div class="project-buttons">
+                        <button class="btn-primary">Ver Demo</button>
+                        <button class="btn-secondary">Código</button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Portfolio Interactivo</h3>
+                        <span class="project-language project-html">HTML/CSS/JS</span>
+                    </div>
+                    <p class="project-description">
+                        Sitio web responsive con animaciones CSS avanzadas y efectos de paralaje para mostrar proyectos creativos.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-buttons">
+                        <button class="btn-primary">Ver Demo</button>
+                        <button class="btn-secondary">Código</button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Bot de Discord Musical</h3>
+                        <span class="project-language project-python">Python</span>
+                    </div>
+                    <p class="project-description">
+                        Bot automatizado que reproduce música, maneja listas de reproducción y modera chat de servidores Discord.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Discord.py</span>
+                        <span class="tech-tag">SQLite</span>
+                    </div>
+                    <div class="project-buttons">
+                        <button class="btn-primary">Ver Demo</button>
+                        <button class="btn-secondary">Código</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-footer">
+                <button class="btn-github">Ver todos los proyectos en GitHub</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marama Section -->
+    <section id="marama" class="marama">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Márama Webs</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">Emprendimiento escolar que combina tecnología y comunicación</p>
+            </div>
+
+            <div class="marama-grid">
+                <div class="marama-content">
+                    <div class="marama-card">
+                        <h3 class="card-title card-title-yellow">Mi rol como Co-fundador</h3>
+                        <p class="card-text">
+                            Como <span class="highlight highlight-yellow">Community Manager</span> y desarrollador, me encargo de:
+                        </p>
+                        <ul class="role-list">
+                            <li><span class="list-dot list-dot-yellow"></span>Estrategia de comunicación digital</li>
+                            <li><span class="list-dot list-dot-orange"></span>Gestión de redes sociales</li>
+                            <li><span class="list-dot list-dot-red"></span>Desarrollo web colaborativo</li>
+                            <li><span class="list-dot list-dot-pink"></span>Atención personalizada al cliente</li>
+                        </ul>
+                    </div>
+
+                    <div class="marama-card">
+                        <h3 class="card-title card-title-orange">Nuestra propuesta</h3>
+                        <p class="card-text">
+                            Creamos <span class="highlight highlight-orange">sitios web profesionales</span> con la frescura y creatividad de una nueva generación. Combinamos técnica sólida con diseño innovador y comunicación cercana.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="marama-stats">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Sitios web creados</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">8</div>
+                            <div class="stat-label">Clientes satisfechos</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label">Compañeros de equipo</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">1</div>
+                            <div class="stat-label">Año de experiencia</div>
+                        </div>
+                    </div>
+
+                    <div class="recent-work">
+                        <h3 class="work-title">Últimos trabajos</h3>
+                        <div class="work-list">
+                            <div class="work-item">
+                                <span class="work-name">Cafetería "El Rincón"</span>
+                                <span class="work-status work-completed">Completado</span>
+                            </div>
+                            <div class="work-item">
+                                <span class="work-name">Estudio de Fotografía Lens</span>
+                                <span class="work-status work-completed">Completado</span>
+                            </div>
+                            <div class="work-item">
+                                <span class="work-name">Consultorio Dental Sonrisa</span>
+                                <span class="work-status work-progress">En desarrollo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="marama-footer">
+                <button class="btn-marama">Conoce más sobre Márama Webs</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Section -->
+    <section id="musica" class="music">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Música & Arte</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">Los Protectores de la Cabra Mística - Donde la música cuenta historias</p>
+            </div>
+
+            <div class="music-grid">
+                <div class="music-content">
+                    <div class="music-card">
+                        <h3 class="card-title card-title-pink">La banda</h3>
+                        <p class="card-text">
+                            <span class="highlight highlight-pink">Los Protectores de la Cabra Mística</span> nació de la idea de crear música que va más allá del sonido. Cada canción es una historia, cada concierto una experiencia teatral.
+                        </p>
+                        <p class="card-text">
+                            Fusionamos géneros musicales con narrativa visual y puesta en escena, creando un universo artístico único donde cada elemento tiene significado.
+                        </p>
+                    </div>
+
+                    <div class="music-card">
+                        <h3 class="card-title card-title-purple">El concepto</h3>
+                        <p class="card-text">
+                            La <span class="highlight highlight-purple">Cabra Mística</span> representa la creatividad pura que debe ser protegida del mundo convencional. A través de nuestras canciones, defendemos la originalidad y la expresión auténtica.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="music-songs">
+                    <h3 class="songs-title">Repertorio destacado</h3>
+                    
+                    <div class="song-card">
+                        <div class="song-header">
+                            <h4 class="song-title">El Misterio de la Cabra</h4>
+                            <span class="song-type">Canción original</span>
+                        </div>
+                        <p class="song-description">Una épica narrativa sobre la búsqueda de la verdad y la protección de lo sagrado</p>
+                        <div class="song-buttons">
+                            <button class="btn-song-primary">Escuchar</button>
+                            <button class="btn-song-secondary">Letra</button>
+                        </div>
+                    </div>
+
+                    <div class="song-card">
+                        <div class="song-header">
+                            <h4 class="song-title">Códigos en el Viento</h4>
+                            <span class="song-type">Fusión tech-folk</span>
+                        </div>
+                        <p class="song-description">Reflexión poética sobre la conexión entre tecnología y naturaleza</p>
+                        <div class="song-buttons">
+                            <button class="btn-song-primary">Escuchar</button>
+                            <button class="btn-song-secondary">Letra</button>
+                        </div>
+                    </div>
+
+                    <div class="song-card">
+                        <div class="song-header">
+                            <h4 class="song-title">Teatro Digital</h4>
+                            <span class="song-type">Performance experimental</span>
+                        </div>
+                        <p class="song-description">Obra que combina actuación en vivo con proyecciones interactivas</p>
+                        <div class="song-buttons">
+                            <button class="btn-song-primary">Escuchar</button>
+                            <button class="btn-song-secondary">Letra</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="music-footer">
+                <div class="music-footer-card">
+                    <h3 class="footer-title">Próximas presentaciones</h3>
+                    <p class="footer-text">Síguenos en nuestras redes para conocer fechas de conciertos y nuevos lanzamientos</p>
+                    <div class="footer-buttons">
+                        <button class="btn-music-primary">Instagram de la banda</button>
+                        <button class="btn-music-secondary">YouTube</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Conectemos</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-form-container">
+                    <div class="contact-form-card">
+                        <h3 class="form-title">Envíame un mensaje</h3>
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nombre</label>
+                                <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Asunto</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Selecciona un asunto</option>
+                                    <option value="desarrollo">Proyecto de desarrollo</option>
+                                    <option value="marama">Consulta sobre Márama Webs</option>
+                                    <option value="musica">Colaboración musical</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Mensaje</label>
+                                <textarea id="message" name="message" required rows="5" placeholder="Cuéntame sobre tu proyecto o idea..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-contact">Enviar mensaje</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <div class="contact-info-card">
+                        <h3 class="info-title">Otras formas de contacto</h3>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon method-icon-green">📧</div>
+                                <div class="method-info">
+                                    <p class="method-text">santiago.rocca@email.com</p>
+                                    <p class="method-sub">Respuesta en 24-48 horas</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon method-icon-blue">💼</div>
+                                <div class="method-info">
+                                    <p class="method-text">Márama Webs</p>
+                                    <p class="method-sub">Proyectos empresariales</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon method-icon-purple">🎵</div>
+                                <div class="method-info">
+                                    <p class="method-text">Los Protectores</p>
+                                    <p class="method-sub">Colaboraciones musicales</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-card">
+                        <h3 class="social-title">Sígueme</h3>
+                        <div class="social-grid">
+                            <button class="social-btn social-github">GitHub</button>
+                            <button class="social-btn social-linkedin">LinkedIn</button>
+                            <button class="social-btn social-instagram">Instagram</button>
+                            <button class="social-btn social-email">Email</button>
+                        </div>
+                    </div>
+
+                    <div class="contact-cta">
+                        <h3 class="cta-title">¿Listo para crear algo increíble?</h3>
+                        <p class="cta-text">
+                            Ya sea que necesites un sitio web, tengas una idea para un proyecto, o simplemente quieras charlar sobre tecnología y música, ¡estoy aquí para escucharte!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
-<footer>
-  <h3>Cabañas SQL</h3>
-<ul>
-  <h4>Contacto</h4>
-  <li>Cabañas@sma.com.ar</li>
-  <li>2944-202020</li>
-  <li>2944-202020</li>
-  <li>Coronel Diaz 1156</li>
-</ul>
-</footer>
 </html>
