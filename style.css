@@ -224,6 +224,12 @@ summary {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   flex: 1 1 250px;
   max-width: 300px;
+  transition: transform 0.3s ease; 
+}
+
+
+.cartas-cabanas .card:hover{
+  transform: scale(1.2);
 }
 
 .cartas-cabanas .card h3 {
